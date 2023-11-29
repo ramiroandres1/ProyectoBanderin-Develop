@@ -1,0 +1,124 @@
+:root{
+    --color-naranja: #f2794c;
+    --color-mostaza: #d79d22;
+    --color-mostaza-ligth:#d79e22c4;
+    --color-pastel: #fed9a2;
+    --color-blanco: #fff;
+    --color-celeste: #cce7d4;
+    --tipografia-primaria: 'Playfair Display', serif;
+    --tipografia-secundaria: 'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-naranja: #f2794c;
+    --color-mostaza: #d79d22;
+    --color-mostaza-ligth:#d79e22c4;
+    --color-pastel: #fed9a2;
+    --color-blanco: #fff;
+    --color-celeste: #cce7d4;
+    --tipografia-primaria: 'Playfair Display', serif;
+    --tipografia-secundaria: 'Roboto', sans-serif;
+}
+body{
+    font-family: var(--tipografia-primaria);
+}
+
+.qSomos{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITULO */
+.qSomos h2{
+    display: flex;
+    justify-content: flex-start;
+    color: var(--color-mostaza);
+    margin: 4%;
+}
+/* HR */
+.linea{
+    border: solid 1px var(--color-mostaza);
+    margin: 3%;
+    size: 40px;
+}
+/* CONTAINER DE LA IMAGEN */
+.carrousel{
+    width:80%;
+    margin: 2% 10%  2% 10%;
+}
+
+.carrousel img{
+    max-width: 100%;
+}
+/* Container del texto*/
+.texto{
+    width: 100%;
+    background-image: url(../assets/q.Somos.webp);
+}
+
+.texto p {
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--color-mostaza);
+}
+
+@media (min-width: 700px){
+    .qSomos{
+        display:flex;
+        flex-direction: column;
+        flex: wrap;
+    }
+    .linea{
+        margin: 2%;
+        size: 40px;
+    }
+    .texto{
+        margin-bottom: 2%;
+        width: 70%;
+        order: 1;
+        background-image: none;
+        padding-top: 2%;
+    }
+    .texto p {
+        width: 100%;
+        margin-top: 0;
+    }
+    .containers{
+        display: flex;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .carrousel{
+        flex-wrap: wrap;
+        order: 2;
+        width: 30%;
+        margin: 2%;
+        
+    }
+    .carrousel img{
+        max-width: 100%;
+        font-size: 16px;}
+
+    /*.fondo{
+        display: flex;
+        order: 3;
+        width: 100%;
+        
+    }*/
+
+    }
+
+
+
+
